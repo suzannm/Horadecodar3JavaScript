@@ -1,0 +1,24 @@
+let continuar = true;
+let quantidadeAlunos = 0;
+
+while (continuar) {
+  let nota1 = parseFloat(prompt("Digite a 1ª nota do aluno:"));
+  let nota2 = parseFloat(prompt("Digite a 2ª nota do aluno:"));
+  let media = (nota1 + nota2) / 2;
+
+  alert(A média do aluno foi: ${media});
+
+  if (media >= 6.5) {
+    alert("Aluno aprovado!");
+  } else {
+    alert("Aluno reprovado!");
+  }
+
+  quantidadeAlunos++;
+  let resposta = prompt("Deseja calcular a média de outro aluno? (S/N)").toUpperCase();
+
+  if (resposta !== "S") {
+    continuar = false;
+    alert(Programa encerrado. Quantidade de alunos avaliados: ${quantidadeAlunos});
+  }
+}
