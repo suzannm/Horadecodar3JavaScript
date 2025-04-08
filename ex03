@@ -1,0 +1,9 @@
+let n = parseInt(prompt("Digite até qual número deseja ver as tabuadas:"));
+
+for (let i = 1; i <= n; i++) {
+  let resultado = Tabuada do ${i}:\n;
+  for (let j = 1; j <= 10; j++) {
+    resultado += ${i} x ${j} = ${i * j}\n;
+  }
+  alert(resultado);
+}
